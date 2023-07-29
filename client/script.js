@@ -45,9 +45,10 @@ const randomActivity = funnyActivities[Math.floor(Math.random() * funnyActivitie
 
 const joke = `Yo mama is so ${randomAdjective}, when she decided to become a ${randomProfession}, they had her ${randomActivity}.`;
 
-
-const body = document.querySelector('body');
-
-const textElement = document.createElement('h1');
-textElement.innerHTML = joke;
-body.appendChild(textElement);
+function displayJoke(){
+    const body = document.querySelector('body');
+    const textElement = document.createElement('h1');
+    textElement.innerHTML = joke;
+    body.appendChild(textElement);
+}
+displayJoke();
